@@ -28,7 +28,7 @@ proc updateHandler(b: Telebot, u: Update): Future[bool] {.async,gcsafe.} =
       var lrtext = toLower(rtext)
       for i in words.split(","):
         if lrtext.startsWith(i):
-          iambeflag = true
+          iambenflag = true
           break
 
       var endwithflag = false
